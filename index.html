@@ -93,7 +93,12 @@ function randomKind() {
 
 function addLove() {
 	var lovey = prompt("Tell me in one word: What does love mean to you?");
-	love2.push(lovey);
+	if (lovey.length < 100){
+		love2.push(lovey);
+	}
+	else {
+		alert ("I am just a simple machine. I can only take one word.");
+	}
 }
 
 </script>
